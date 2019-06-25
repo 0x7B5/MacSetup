@@ -31,6 +31,10 @@ brew install node
 #Install web-popup
 npm install --global website-popup-cli
 
+#Install CocoaPods
+echo "Cocoapods" 
+sudo gem install cocoapods
+
 #Setup Vim 
 echo "Setting up vim"
 cat vimrc >> ~/.vimrc
