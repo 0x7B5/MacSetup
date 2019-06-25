@@ -34,7 +34,7 @@ npm install --global website-popup-cli
 #Install CocoaPods
 echo "Cocoapods" 
 sudo gem install cocoapods
-
+pod setup --verbose
 #Setup Vim 
 echo "Setting up vim"
 cat vimrc >> ~/.vimrc
