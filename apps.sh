@@ -8,9 +8,35 @@ brew install mas-cli/tap/mas
 echo "Installing Firefox" 
 brew cask install firefox
 
+#Burp Suite
+echo "Burp Suite"
+brew cask install burp-suite
+
+#Angry IP Scanner
+echo "Angry IP Scanner" 
+brew cask install angry-ip-scanner
+
+#LanScan
+echo "LanScan" 
+mas install 472226235
+
+#Tunnelblick
+echo "Tunnelblick"
+brew cask install tunnelblick
+
+#Impactor
+echo "Impactor" 
+echo "This is 32 bit so it won't work on the new macOS"
+echo "Installing anyways" 
+brew cask install impactor
+
 #iTerm 
 echo "Installing iTerm" 
 brew cask install iterm2
+
+#VNC Viewer
+echo "VNC Viewer"
+brew cask install vnc-viewer
 
 #Sublime Text 
 echo "Installing Sublime Text" 
