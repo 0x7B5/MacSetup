@@ -36,6 +36,13 @@ mas install 409201541
 echo "Xcode" 
 mas install 497799835
 
+#Tor 
+echo "Tor"
+brew cask install tor-browser
+
+#Discord
+echo "Discord" 
+brew cask install discord
 echo "Install Window Tidy" 
 echo "Install Impactor" 
 echo "Install IDA Pro" 
