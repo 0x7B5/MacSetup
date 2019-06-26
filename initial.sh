@@ -35,6 +35,12 @@ npm install --global website-popup-cli
 echo "Cocoapods" 
 sudo gem install cocoapods
 pod setup --verbose
+
+#GPG 
+echo "GPG" 
+brew install gnupg
+echo "Don't forget to generate new key for github"
+
 #Setup Vim 
 echo "Setting up vim"
 cat vimrc >> ~/.vimrc
