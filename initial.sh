@@ -72,8 +72,6 @@ echo "Disable animations when you open an application from the Dock."
 defaults write com.apple.dock launchanim -bool false
 echo "Disable the standard delay in rendering a Web page."
 defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.25
-echo "The keyboard react faster to keystrokes"
-defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo "Showing full POSIX path in Finder header"
 # https://www.defaults-write.com/display-full-posix-path-in-os-x-finder-title-bar/

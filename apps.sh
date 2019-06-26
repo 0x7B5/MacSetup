@@ -30,6 +30,9 @@ echo "This is 32 bit so it won't work on the new macOS"
 echo "Installing anyways" 
 brew cask install impactor
 
+#Macdown 
+echo "Macdown" 
+brew cask install macdown
 #iTerm 
 echo "Installing iTerm" 
 brew cask install iterm2
