@@ -86,4 +86,8 @@ defaults write com.apple.finder AppleShowAllFiles YES
 echo "Showing all file extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+echo "Menu bar items"
+defaults write com.apple.systemuiserver menuExtras -array  "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu" "/System/Library/CoreServices/Menu Extras/Displays.menu" "/System/Library/CoreServices/Menu Extras/Volume.menu"
+echo "Restarting SystemUIServer"
+killall SystemUIServer
 echo "You should probably restart now."
