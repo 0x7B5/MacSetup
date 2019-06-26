@@ -10,6 +10,9 @@ else
    echo "Change res"
 fi
 
+#Enable SSH
+sudo systemsetup -setremotelogin on
+
 #Install Xcode tools
 if xcode-select -p &> /dev/null; then
     echo "XCode developer tools are installed!"
