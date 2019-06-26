@@ -12,6 +12,10 @@ brew cask install firefox
 echo "Burp Suite"
 brew cask install burp-suite
 
+#VLC
+echo "VLC" 
+brew cask install vlc 
+
 #Angry IP Scanner
 echo "Angry IP Scanner" 
 brew cask install angry-ip-scanner
