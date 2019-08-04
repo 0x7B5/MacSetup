@@ -56,6 +56,10 @@ echo "run gpg --armor --export, to export key"
 git config --global gpg.program gpg
 git config --global commit.gpgsign true
 
+#Apps from anywhere 
+echo "Allowing apps from anywhere"
+sudo spctl --master-disable
+
 #Setup Vim 
 echo "Setting up vim"
 cat vimrc >> ~/.vimrc
