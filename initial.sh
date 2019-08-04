@@ -30,6 +30,7 @@ fi
 echo "Installing node"
 brew update
 brew install node
+brew install gnupg
 
 #Install web-popup
 npm install --global website-popup-cli
@@ -42,7 +43,18 @@ pod setup --verbose
 #GPG 
 echo "GPG" 
 brew install gnupg
-echo "Don't forget to generate new key for github"
+echo "Generating new key for github"
+brew upgrade gnupg
+brew link --overwrite gnupg
+brew install pinentry-mac
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+killall gpg-agent
+
+gpg2 --full-generate-key
+gpg --list-secret-keys --keyid-format LONG
+echo "run gpg --armor --export, to export key" 
+git config --global gpg.program gpg
+git config --global commit.gpgsign true
 
 #Setup Vim 
 echo "Setting up vim"
