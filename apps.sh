@@ -53,6 +53,10 @@ brew cask install sublime-text
 echo "Installing Visual Studio" 
 brew cask install visual-studio-code
 
+#Google Chrome 
+echo "Google Chrome"
+brew cask install google-chrome
+
 #The Unarchiver
 echo "The Unarchiver"
 mas install 425424353
