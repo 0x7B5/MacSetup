@@ -11,16 +11,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ycm-core/YouCompleteMe.git'
+Plugin 'alvan/vim-closetag'
+let g:ycm_global_ycm_extra_conf = '/Users/noodlesoup/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-
-
-
-"set autoindent"
-"set smartindent"
 set number
 set textwidth=80
 
@@ -37,8 +33,3 @@ set noswapfile
 
 
 syntax on
-
-
-
-
-
