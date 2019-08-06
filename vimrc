@@ -12,24 +12,43 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ycm-core/YouCompleteMe.git'
 Plugin 'alvan/vim-closetag'
-let g:ycm_global_ycm_extra_conf = '/Users/noodlesoup/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set ruler
+set rulerformat=%l,%v
 set number
 set textwidth=80
 
 set tabstop=4
 set shiftwidth=4
 set expandtab
+filetype indent on
 
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+" -----------------------------------------------------------------------------------------
+" autocomplete
+let g:ycm_auto_trigger = 1
+let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+set backspace=indent,eol,start
+
+" -----------------------------------------------------------------------------------------
 set showmatch
 set hlsearch
 set incsearch
 set spell spelllang=en_us
 set nobackup
 set noswapfile
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 
 syntax on
