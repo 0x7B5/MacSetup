@@ -73,6 +73,10 @@ mas install 409201541
 echo "Xcode" 
 mas install 497799835
 
+#Numbers
+echo "Numbers"
+mas install 409203825
+
 #Tor 
 echo "Tor"
 brew cask install tor-browser
