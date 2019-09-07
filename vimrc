@@ -13,6 +13,9 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ycm-core/YouCompleteMe.git'
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
+Plugin 'dense-analysis/ale'
+Plugin 'vim-syntastic/syntastic.git'
+Plugin 'keith/swift.vim.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -32,6 +35,8 @@ let g:html_indent_style1 = "inc"
 
 " -----------------------------------------------------------------------------------------
 " autocomplete
+let g:syntastic_swift_swiftlint_use_defaults = 1
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 let g:ycm_auto_trigger = 1
 let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_confirm_extra_conf = 0
@@ -46,9 +51,6 @@ set spell spelllang=en_us
 set nobackup
 set noswapfile
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 
 syntax on
