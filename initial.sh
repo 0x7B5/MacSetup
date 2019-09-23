@@ -48,6 +48,14 @@ brew upgrade gnupg
 brew link --overwrite gnupg
 killall gpg-agent
 
+#Todoist 
+echo "Todoist"
+brew tap sachaos/todoist
+brew install todoist
+echo "You need to generate an API token"
+echo "https://github.com/Cosmitar/todoist-js/wiki/Getting-access-token"
+todoist list
+
 gpg2 --full-generate-key
 gpg --list-secret-keys --keyid-format LONG
 echo "run gpg --armor --export, to export key" 
